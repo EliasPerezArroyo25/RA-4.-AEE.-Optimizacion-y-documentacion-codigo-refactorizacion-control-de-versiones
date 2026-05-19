@@ -9,4 +9,15 @@ Esta refactorización se va a llevar a cabo en NetBeans.Para eso se tendrá que 
 * Finalmente, se realizarán las pruebas que la clase funciona perfectamente.
 
 ## Fase 1: Análisis de la Deuda Técnica
+El código proporcionado sufre de 3 grandes principales problemas, uso de números imaginarios, declaración de variables sin uso, y mala estructuración del código que dificulta la legibilidad al programador:
 
+* En el código se usan variables como *”cT,m,tC,dV”* que son muy poco intuitivas para el programador, además de insertar números manualmente en vez de crear constantes, lo cual confunde de donde provienen dichos números
+
+* El código peca de un mal uso de variables, ya que estas no solo no son intuitivas, también son desaprovechadas, siendo declaradas pero no usadas en el código
+
+* La estructura del código peca de una formación, el código hace un código excesivo de if-else, que se no tienen sentido, dándole una forma que dificulta su legibilidad
+	
+## Fase 2: Refactorización Asistida por el IDE
+Ahora en el código de la clase se empezará refactorizando usando las herramientas de Netbeans:
+*  Cambio de ct a calcularTotal.
+*  Se declaran las constantes con nombres descriptivos.
