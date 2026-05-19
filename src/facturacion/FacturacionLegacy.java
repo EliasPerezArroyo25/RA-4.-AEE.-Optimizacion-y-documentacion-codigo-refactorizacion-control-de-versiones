@@ -4,24 +4,27 @@ package facturacion;
  * ADVERTENCIA: Código con alta deuda técnica. No modificar la firma del método.
  */
 public class FacturacionLegacy {
-
+   
     // Método a refactorizar
-    public double cT(double m, int tC, boolean dV) {
-        if (m > 0) {
-            if (tC == 1) {
-                if (dV == true)
-                    return m - (m * 0.25);
+    public double calcularTotal(double importeBase, int tipoCliente, boolean esSocioVip) {
+        if (importeBase > 0) {
+            if (tipoCliente == 1) {
+                if (esSocioVip == true)
+                    return importeBase - (importeBase * DESCUENTO_VIP_EXTRA);
                 else
-                    return m - (m * 0.15);
+                    return importeBase - (importeBase * DESCUENTO_VIP);
             } else {
-                if (tC == 2) {
-                    return m - (m * 0.05);
+                if (tipoCliente == 2) {
+                    return importeBase - (importeBase * DESCUENTO_ESTANDAR);
                 } else {
-                    return m;
+                    return importeBase;
                 }
             }
         } else {
             return 0;
         }
     }
+    private static final double DESCUENTO_ESTANDAR = 0.05;
+    private static final double DESCUENTO_VIP = 0.15;
+    private static final double DESCUENTO_VIP_EXTRA = 0.25;
 }
