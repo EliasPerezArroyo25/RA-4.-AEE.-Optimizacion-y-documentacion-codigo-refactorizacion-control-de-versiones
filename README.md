@@ -24,6 +24,8 @@ Ahora en el código de la clase se empezará refactorizando usando las herramien
 *  Se eliminan los ifs innecesarios
 *  se reconstruye la estructura
 ## Fase 3: Verificación, Documentación y Entrega
+Después de haber factorizado, se comprueba si sigue funcionando todo bien, de ser así pasaremos a la documentación dentro del código, usando la herramienta javadocs
+
 *  Se añade comentario explicando qué hace cada parte del código
 *  Se usan los @params para indicar que valor reciben las variables
 *  Se usa el @return para indicar que devuelve
