@@ -21,3 +21,9 @@ El código proporcionado sufre de 3 grandes principales problemas, uso de númer
 Ahora en el código de la clase se empezará refactorizando usando las herramientas de Netbeans:
 *  Cambio de ct a calcularTotal.
 *  Se declaran las constantes con nombres descriptivos.
+*  Se eliminan los ifs innecesarios
+*  se reconstruye la estructura
+## Fase 3: Verificación, Documentación y Entrega
+*  Se añade comentario explicando qué hace cada parte del código
+*  Se usan los @params para indicar que valor reciben las variables
+*  Se usa el @return para indicar que devuelve
